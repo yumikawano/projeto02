@@ -27,20 +27,20 @@ function Header (){
           <Nav className="me-auto">
 
           <NavDropdown title="Cachorro" id="basic-nav-dropdown">
-            <NavDropdown.Item href="#action/3.2">Ração</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.1">Ração</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.2">Petiscos e Ossos</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.3">Tapetes, Fraldas e Banheiros</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.1">Farmácia</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.1">Brinquedos</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.1">Coleiras, Guias e Peitorais</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.1">Beleza e Limpeza</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.1">Camas e Cobertores</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.1">Casas e Tocas</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.1">Acessórios de Alimentação</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.1">Acessórios de Transporte</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.1">Portões, Grades e Escadas</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.1">Roupas</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.1">Adestramento e Comportamento</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.4">Farmácia</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.5">Brinquedos</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.6">Coleiras, Guias e Peitorais</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.7">Beleza e Limpeza</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.8">Camas e Cobertores</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.9">Casas e Tocas</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.10">Acessórios de Alimentação</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.11">Acessórios de Transporte</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.12">Portões, Grades e Escadas</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.13">Roupas</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.14">Adestramento e Comportamento</NavDropdown.Item>
             <NavDropdown.Divider />
         </NavDropdown>
         
@@ -128,40 +128,10 @@ function Header (){
   )
 }
 
-function Footer () {
+function Root () {
   return (
-    <footer className='footer text-left text-black py-2 mt-4'>
-      <div className='container container-red'>
-        <div className='row'>
-          <div className='col col-pagamentos'>
-            <p className='footer'>Formas de pagamento:</p>
-            <img src={ Master } alt='Logo Master Card' width={30} height={20} />
-            <img src={ Visa } alt='Logo Visa Card' width={30} height={20} />
-            <img src={ Elo } alt='Logo Elo Card' width={30} height={20} />
-            <img src={ Pix } alt='Logo Pix' width={30} height={20} />
-          </div>
-          <div className='col col-redes'>
-            <p className='footer'>Nossas Redes</p>
-            <img className='img-redes'src={ Whatsapp }alt="Botão Whatsapp" width={30} height={30} href='' />
-            <img className='img-redes'src={ Instagram }alt="Botão Instagram" width={30} height={30} href='https://www.instagram.com/petmaniamga/'/>
-            <img className='img-redes'src={ Facebook }alt="Botão Facebook" width={30} height={30} href='https://pt-br.facebook.com/petmaniamaringa/'/>
-          </div>
-        </div>
-      </div>
-      <p className='m-0'>Pet Mania S.A</p>
-      <p className='m-0'>CNPJ: 00.000.000/0000-00</p>
-      <p className='m-0'>Av. Mauá 1308 , Zona 03, Maringá - PR, 87050-020</p>
-      <p className='m-0'>Compra segura</p>
-      <p className='m-0'>A Pet Mania garante segurança para suas informações pessoais e financeiras</p>
-      <p className='text-center m-0'>Copyright 2022 © Todos os direitos reservados à Pet Mania</p>
-    </footer>
-  )
-}
-function HomeView () {
-  return (
-  <>
-  <Header />
-  <Carousel fade>
+    <root className='root'>
+        <Carousel fade>
   <Carousel.Item>
     <img
       className="d-block w-100"
@@ -192,18 +162,64 @@ function HomeView () {
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
-<img className='frete' src={Frete} alt="Receba em horas" width={150} height={150} />
-<img className='store' src={Store} alt="Retire e troque na loja" width={150} height={150}/>
 <div className='container'>
   <div className='row'>
     <div className='col'>
-      <p className='footer'>Receba em horas</p>
+      <img className='frete' src={Frete} alt="Receba em horas" width={100} height={150} />
     </div>
     <div className='col'>
-      <p className='footer'>Retire e troque na loja</p>
+      <img className='store' src={Store} alt="Retire e troque na loja" width={150} height={150}/>
     </div>
   </div>
 </div>
+<div className='container'>
+  <div className='row'>
+    <div className='col'>
+      <p className='p-footer text-center'>Receba em horas</p>
+    </div>
+    <div className='col'>
+      <p className='p-footer text-center'>Retire e troque na loja</p>
+    </div>
+  </div>
+</div>
+    </root>
+  )
+}
+
+function Footer () {
+  return (
+    <footer className='footer text-left text-black py-2 mt-4'>
+      <div className='container-red'>
+        <div className='row'>
+          <div className='col col-pagamentos'>
+            <p className='p-footer'>Formas de pagamento:</p>
+            <img className='img-card' src={ Master } alt='Logo Master Card' width={30} height={20} />
+            <img className='img-card' src={ Visa } alt='Logo Visa Card' width={30} height={20} />
+            <img className='img-card' src={ Elo } alt='Logo Elo Card' width={30} height={20} />
+            <img className='img-card' src={ Pix } alt='Logo Pix' width={30} height={20} />
+          </div>
+          <div className='col col-redes'>
+            <p className='p-footer'>Nossas Redes</p>
+            <img className='img-redes'src={ Whatsapp }alt="Botão Whatsapp" width={30} height={30} href='' />
+            <img className='img-redes'src={ Instagram }alt="Botão Instagram" width={30} height={30} href='https://www.instagram.com/petmaniamga/'/>
+            <img className='img-redes'src={ Facebook }alt="Botão Facebook" width={30} height={30} href='https://pt-br.facebook.com/petmaniamaringa/'/>
+          </div>
+        </div>
+      </div>
+      <p className='footer-p'>Pet Mania S.A</p>
+      <p className='footer-p'>CNPJ: 00.000.000/0000-00</p>
+      <p className='footer-p'>Av. Mauá 1308 , Zona 03, Maringá - PR, 87050-020</p>
+      <p className='footer-p'>Compra segura</p>
+      <p className='footer-p'>A Pet Mania garante segurança para suas informações pessoais e financeiras</p>
+      <p className='footer-p text-center m-0'>Copyright 2022 © Todos os direitos reservados à Pet Mania</p>
+    </footer>
+  )
+}
+function HomeView () {
+  return (
+  <>
+  <Header />
+  <Root />
   <Footer />
   </>
   )
