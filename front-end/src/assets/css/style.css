@@ -1,0 +1,46 @@
+header{
+    background-color: red;
+}
+.logo{
+    border-radius: 100%;
+}
+
+.container-red{
+    background-color: red;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+}
+
+.btn-login{
+    background-color: red;
+}
+
+.btn-cart{
+    background-color: red;
+}
+
+.frete{
+    margin-left: 10px;
+}
+
+.store{
+    margin-left: 20px;
+}
+
+footer p{
+    font-size: 10px;
+}
+.footer{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.img-redes{
+    margin-top: 20px;
+}
+
+.col{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
