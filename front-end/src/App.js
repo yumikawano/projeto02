@@ -18,10 +18,9 @@ import Instagram from "./assets/img/instagram.png";
 import Facebook from "./assets/img/facebook.png";
 import Cat from "./assets/img/foto2.jpg";
 import Dog from "./assets/img/foto3.jpg";
-import Promo from "./assets/img/foto4.png";
+import Promo from "./assets/img/foto4.jpg";
 import Frete from "./assets/img/frete.png";
 import Store from "./assets/img/store.png";
-import "./assets/css/style.css";
 
 function Header() {
   return (
@@ -238,38 +237,184 @@ function Header() {
             </NavDropdown>
 
               <NavDropdown title="Pássaros" id="basic-nav-dropdown">
-                <NavDropdown title="Alimentação" id="basic-nav-dropdown"></NavDropdown>
-                <NavDropdown title="Gaiolas e Viveiros" id="basic-nav-dropdown"></NavDropdown>
-                <NavDropdown title="Brinquedos e Poleiros" id="basic-nav-dropdown"></NavDropdown>
-                <NavDropdown title=" Acessórios" id="basic-nav-dropdown"></NavDropdown>
-                <NavDropdown title="Farmácia" id="basic-nav-dropdown"></NavDropdown>
+                <NavDropdown title="Alimentação" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#action3.10">Calopsita</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Trinca-Ferro</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Papagaio</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Periquito</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Beija-Flor</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Sabiá</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Canário</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Outras Espécies</NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown title="Gaiolas e Viveiros" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#action3.10">Gaiolas</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Viveiros</NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown title="Brinquedos e Poleiros" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#action3.10">Brinquedos</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Poleiros</NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown title=" Acessórios" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#action3.10">Porta Frutas e Porta Vitaminas</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Bebedouros</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Comedouros</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Banheiras</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Ninhos</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Bica Pedra</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Higiêne</NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown title="Farmácia" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#action3.10">Vitaminas</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Vermífugos</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Antibióticos</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Medicamentos</NavDropdown.Item>
+                </NavDropdown>
               </NavDropdown>
 
               <NavDropdown title="Peixes" id="basic-nav-dropdown">
-                <NavDropdown title="Alimentação" id="basic-nav-dropdown"></NavDropdown>
-                <NavDropdown title="Equipamentos e Acessórios" id="basic-nav-dropdown"></NavDropdown>
-                <NavDropdown title="Aquários e Baterias" id="basic-nav-dropdown"></NavDropdown>
-                <NavDropdown title="Tratamento de Água" id="basic-nav-dropdown"></NavDropdown>
-                <NavDropdown title="Decoração" id="basic-nav-dropdown"></NavDropdown>
-                <NavDropdown title="Farmácia" id="basic-nav-dropdown"></NavDropdown>
+                <NavDropdown title="Alimentação" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#action3.10">Alimento Base</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Peixes de Fundo</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Peixe Betta</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Ciclídeos</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Kinguios e Carpas</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Peixes Carnívoros</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Peixes Marinhos</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Outras Espécies</NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown title="Equipamentos e Acessórios" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#action3.10">Alimentador Automático</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Filtros e Mídias</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Iluminação</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Bombas e Compressores</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Termostatos e Termômetros</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Aquecedores</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Sifão</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Limpadores</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Criadeiras</NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown title="Aquários e Baterias" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#action3.10">Aquário Kit</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Aquário Base</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Baterias</NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown title="Tratamento de Água" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#action3.10">Condicionador de Água</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Testes de Água</NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown title="Decoração" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#action3.10">Substratos</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Rochas e Troncos</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Enfeites</NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown title="Farmácia" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#action3.10">Suplementos</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Medicamentos</NavDropdown.Item>
+                </NavDropdown>
               </NavDropdown>
 
               <NavDropdown title="Outros Pets" id="basic-nav-dropdown">
-              <NavDropdown title="Coelhos" id="basic-nav-dropdown"></NavDropdown>
-                <NavDropdown title="Hamster e Twister" id="basic-nav-dropdown"></NavDropdown>
-                <NavDropdown title="Porquinho da Índia" id="basic-nav-dropdown"></NavDropdown>
-                <NavDropdown title="Chinchilas" id="basic-nav-dropdown"></NavDropdown>
-                <NavDropdown title="Gerbil" id="basic-nav-dropdown"></NavDropdown>
-                <NavDropdown title="Furão" id="basic-nav-dropdown"></NavDropdown>
-                <NavDropdown title="Tartarugas" id="basic-nav-dropdown"></NavDropdown>
-                <NavDropdown title="Largatos" id="basic-nav-dropdown"></NavDropdown>
+              <NavDropdown title="Coelhos" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#action3.10">Ração</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Gaiolas e Casinhas</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Serragens e Granulados</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Feno e Alfafa</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Brinquedos</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Higiêne</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Medicamentos e Vitaminas</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Acessórios</NavDropdown.Item>
+              </NavDropdown>
+                <NavDropdown title="Hamster e Twister" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#action3.10">Ração</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Gaiolas e Casinhas</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Serragens e Granulados</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Feno e Alfafa</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Brinquedos</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Higiêne</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Medicamentos e Vitaminas</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Acessórios</NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown title="Porquinho da Índia" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#action3.10">Ração</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Gaiolas e Casinhas</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Serragens e Granulados</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Feno e Alfafa</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Brinquedos</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Higiêne</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Medicamentos e Vitaminas</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Acessórios</NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown title="Chinchilas" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#action3.10">Ração</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Gaiolas e Casinhas</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Serragens e Granulados</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Feno e Alfafa</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Brinquedos</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Higiêne</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Medicamentos e Vitaminas</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Acessórios</NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown title="Gerbil" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#action3.10">Ração</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Gaiolas e Casinhas</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Serragens e Granulados</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Feno e Alfafa</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Brinquedos</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Medicamentos e Vitaminas</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Acessórios</NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown title="Furão" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#action3.10">Ração</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Gaiolas e Casinhas</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Serragens e Granulados</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Medicamentos e Vitaminas</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Acessórios</NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown title="Tartarugas" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#action3.10">Ração</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Aquaterrários</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Tocas</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Medicamentos e Vitaminas</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Acessórios</NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown title="Largatos" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#action3.10">Ração</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Aquaterrários</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Tocas</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Medicamentos e Vitaminas</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Acessórios</NavDropdown.Item>
+                </NavDropdown>
               </NavDropdown>
 
               <NavDropdown title="Casa e Jardim" id="basic-nav-dropdown">
-                <NavDropdown title="Jardim" id="basic-nav-dropdown"></NavDropdown>
-                <NavDropdown title="Piscina" id="basic-nav-dropdown"></NavDropdown>
-                <NavDropdown title="Controle de Pragas" id="basic-nav-dropdown"></NavDropdown>
-                <NavDropdown title="Casa e Ambiente" id="basic-nav-dropdown"></NavDropdown>
+                <NavDropdown title="Jardim" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#action3.10">Sementes</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Vasos e Pratos</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Terras e Substratos</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Adubos e Fertilizantes</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Enfeites e Decoração</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Regadores e Pulverizadores</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Acessórios de Jardinagem</NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown title="Piscina" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#action3.10">Cloro para Piscina</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Algicidas</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Clarificantes</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Decantador</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Limpa Bordas</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Regulador de PH</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Teste de Piscina</NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown title="Controle de Pragas" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#action3.10">Raticidas</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Repelentes</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Inseticidas</NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown title="Casa e Ambiente" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#action3.10">Aromatizadores</NavDropdown.Item>
+                <NavDropdown.Item href="#action3.10">Diversos</NavDropdown.Item>
+                </NavDropdown>
               </NavDropdown>
             </Nav>
             <Form className="d-flex">
@@ -427,6 +572,7 @@ function Footer() {
           </div>
           <div className="col col-redes">
             <p className="p-footer">Nossas Redes</p>
+            <a href="https://wa.me/+5544998472200" target="_blank">
             <img
               className="img-redes"
               src={Whatsapp}
@@ -435,7 +581,8 @@ function Footer() {
               height={30}
               href=""
             />
-            <a href="https://www.instagram.com/petmaniamga/">
+            </a>
+            <a href="https://www.instagram.com/petmaniamga/" target="_blank">
               <img
                 className="img-redes"
                 src={Instagram}
@@ -444,21 +591,22 @@ function Footer() {
                 height={30}
               />
             </a>
+            <a href="https://pt-br.facebook.com/petmaniamaringa" target="_blank">
             <img
               className="img-redes"
               src={Facebook}
               alt="Botão Facebook"
               width={30}
               height={30}
-              href="https://pt-br.facebook.com/petmaniamaringa"
             />
+            </a>
           </div>
         </div>
       </div>
-      <p className="footer-p">Pet Mania S.A</p>
-      <p className="footer-p">CNPJ: 00.000.000/0000-00</p>
+      <p className="footer-p">Pet Mania LTDA</p>
+      <p className="footer-p">CNPJ: 04.137.823/0001-14</p>
       <p className="footer-p">
-        Av. Mauá 1308 , Zona 03, Maringá - PR, 87050-020
+        Av. Dona Sophia Rasgulaeff, 3222, Jd. Oásis, Maringá - PR, 87043-010
       </p>
       <p className="footer-p">Compra segura</p>
       <p className="footer-p">
