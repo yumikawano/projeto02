@@ -1,0 +1,36 @@
+{
+    "products": [
+
+        {
+            "name": "Ração Seca ",
+            "shortDescription": "Ração seca para cachorros adultos.",
+            "id": 1
+          },
+          {
+            "name": "Ração Úmida",
+            "shortDescription": "Ração úmida para cachorros adultos",
+            "id": 2
+          },
+          {
+            "id": 3,
+            "name": "Ração Prescrita ",
+            "shortDescription": "Ração prescrita para cachorros adultos."
+          },
+          {
+            "id": 4,
+            "name": "Ração Natural",
+            "shortDescription": "Ração natural para cachorros adultos."
+          },
+          {
+            "id": 5,
+            "name": "Palitos",
+            "shortDescription": "Palitos para cachorros."
+          },
+          {
+            "id": 6,
+            "name": "Bifinhos",
+            "shortDescription": "Bifinhos para cachorros."
+          }
+        ],
+        "inscriptions": []
+}
