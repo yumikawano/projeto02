@@ -3,34 +3,53 @@
 
         {
             "name": "Ração Seca ",
+            "image": "/images/pizza-calabresa.jpg",
+            "description": "hubdjhudasashd, dbsujadbujbdskahd asdhuhdasdh.",
             "shortDescription": "Ração seca para cachorros adultos.",
             "id": 1
           },
           {
             "name": "Ração Úmida",
+            "image": "/images/pizza-calabresa.jpg",
+            "description": "hubdjhudasashd, dbsujadbujbdskahd asdhuhdasdh.",
             "shortDescription": "Ração úmida para cachorros adultos",
             "id": 2
           },
           {
             "id": 3,
             "name": "Ração Prescrita ",
+            "image": "/images/pizza-calabresa.jpg",
+            "description": "hubdjhudasashd, dbsujadbujbdskahd asdhuhdasdh.",
             "shortDescription": "Ração prescrita para cachorros adultos."
           },
           {
             "id": 4,
             "name": "Ração Natural",
+            "image": "/images/pizza-calabresa.jpg",
+            "description": "hubdjhudasashd, dbsujadbujbdskahd asdhuhdasdh.",
             "shortDescription": "Ração natural para cachorros adultos."
           },
           {
             "id": 5,
             "name": "Palitos",
+            "image": "/images/pizza-calabresa.jpg",
+            "description": "hubdjhudasashd, dbsujadbujbdskahd asdhuhdasdh.",
             "shortDescription": "Palitos para cachorros."
           },
           {
             "id": 6,
             "name": "Bifinhos",
+            "image": "/images/pizza-calabresa.jpg",
+            "description": "hubdjhudasashd, dbsujadbujbdskahd asdhuhdasdh.",
             "shortDescription": "Bifinhos para cachorros."
           }
         ],
-        "inscriptions": []
+        "inscriptions": [
+          {
+            "name": "Yumi",
+            "email": "yumi@yumi.com",
+            "courseId": 1,
+            "id": 1
+          }
+        ]
 }
