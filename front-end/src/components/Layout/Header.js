@@ -16,7 +16,7 @@ export function Header() {
       <header>
         <Navbar expand="lg">
           <Container>
-            <Navbar.Brand href="/">
+            <Navbar.Brand as={Link} to='/'>
               <img
                 src={Logo}
                 className="logo"
@@ -28,6 +28,7 @@ export function Header() {
             <Navbar.Toggle aria-controls="navbar-header" />
             <Navbar.Collapse id="navbar-header">
               <Nav className="me-auto">
+              <Nav.Link as={Link} to='/'>Início</Nav.Link>
                 <NavDropdown
                   title="Cachorros"
                   id="basic-nav-dropdown"

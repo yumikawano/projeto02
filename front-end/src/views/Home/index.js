@@ -6,6 +6,7 @@ import Frete from "../../assets/img/frete.png";
 import Store from "../../assets/img/store.png";
 import { Layout } from "../../components/Layout";
 
+
 export function Home() {
   return (
     <Layout>
