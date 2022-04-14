@@ -2,46 +2,204 @@
     "products": [
 
         {
-            "name": "Ração Seca ",
-            "image": "/images/pizza-calabresa.jpg",
-            "description": "hubdjhudasashd, dbsujadbujbdskahd asdhuhdasdh.",
-            "shortDescription": "Ração seca para cachorros adultos.",
+            "name": "Ração Golden Special Sabor Frango e Carne para Cães Adultos",
+            "image": "/images/foto4.4.jpg",
+            "description": "Farinha de vísceras de frango, farinha de carne, milho integral moído, quirera de arroz gordura de frango, farelo de arroz desengordurado, hidrolisado de frango, premix vitamínico mineral, cloreto de sódio, cloreto de potássio, parede celular de levedura, antioxidantes BHA e BHT.",
+            "shortDescription": "Ração seca para cachorros adultos. Fórmula rica em nutrientes e minerais. Promove maior equilíbrio intestinal. Reduz o volume e odor das fezes. Disponível em embalagens de 15 kg e 20 kg.",
+            "class": "Cachorro",
+            "category": "Ração",
+            "subcategory": "Ração Seca",
             "id": 1
           },
           {
             "name": "Ração Úmida",
-            "image": "/images/pizza-calabresa.jpg",
-            "description": "hubdjhudasashd, dbsujadbujbdskahd asdhuhdasdh.",
-            "shortDescription": "Ração úmida para cachorros adultos",
+            "image": "/images/foto5.jpg",
+            "description": "Farinha de vísceras de frango, farinha de carne, milho integral moído, quirera de arroz gordura de frango, farelo de arroz desengordurado, hidrolisado de frango, premix vitamínico mineral, cloreto de sódio, cloreto de potássio, parede celular de levedura, antioxidantes BHA e BHT.",
+            "shortDescription": "Ração seca para cachorros adultos. Fórmula rica em nutrientes e minerais. Promove maior equilíbrio intestinal. Reduz o volume e odor das fezes. Disponível em embalagens de 15 kg e 20 kg.",
+            "class": "Cachorro",
+            "category": "Ração",
+            "subcategory": "Ração Seca",
             "id": 2
           },
           {
-            "id": 3,
             "name": "Ração Prescrita ",
-            "image": "/images/pizza-calabresa.jpg",
-            "description": "hubdjhudasashd, dbsujadbujbdskahd asdhuhdasdh.",
-            "shortDescription": "Ração prescrita para cachorros adultos."
+            "image": "/images/foto6.jpg",
+            "description": "Farinha de vísceras de frango, farinha de carne, milho integral moído, quirera de arroz gordura de frango, farelo de arroz desengordurado, hidrolisado de frango, premix vitamínico mineral, cloreto de sódio, cloreto de potássio, parede celular de levedura, antioxidantes BHA e BHT.",
+            "shortDescription": "Ração seca para cachorros adultos. Fórmula rica em nutrientes e minerais. Promove maior equilíbrio intestinal. Reduz o volume e odor das fezes. Disponível em embalagens de 15 kg e 20 kg.",
+            "class": "Cachorro",
+            "category": "Ração",
+            "subcategory": "Ração Seca",
+            "id": 3
           },
           {
-            "id": 4,
             "name": "Ração Natural",
-            "image": "/images/pizza-calabresa.jpg",
-            "description": "hubdjhudasashd, dbsujadbujbdskahd asdhuhdasdh.",
-            "shortDescription": "Ração natural para cachorros adultos."
+            "image": "/images/foto7.jpg",
+            "description": "Farinha de vísceras de frango, farinha de carne, milho integral moído, quirera de arroz gordura de frango, farelo de arroz desengordurado, hidrolisado de frango, premix vitamínico mineral, cloreto de sódio, cloreto de potássio, parede celular de levedura, antioxidantes BHA e BHT.",
+            "shortDescription": "Ração seca para cachorros adultos. Fórmula rica em nutrientes e minerais. Promove maior equilíbrio intestinal. Reduz o volume e odor das fezes. Disponível em embalagens de 15 kg e 20 kg.",
+            "class": "Cachorro",
+            "category": "Ração",
+            "subcategory": "Ração Seca",
+            "id": 4
           },
           {
-            "id": 5,
             "name": "Palitos",
-            "image": "/images/pizza-calabresa.jpg",
-            "description": "hubdjhudasashd, dbsujadbujbdskahd asdhuhdasdh.",
-            "shortDescription": "Palitos para cachorros."
+            "image": "/images/foto4.4.jpg",
+            "description": "Farinha de vísceras de frango, farinha de carne, milho integral moído, quirera de arroz gordura de frango, farelo de arroz desengordurado, hidrolisado de frango, premix vitamínico mineral, cloreto de sódio, cloreto de potássio, parede celular de levedura, antioxidantes BHA e BHT.",
+            "shortDescription": "Ração seca para cachorros adultos. Fórmula rica em nutrientes e minerais. Promove maior equilíbrio intestinal. Reduz o volume e odor das fezes. Disponível em embalagens de 15 kg e 20 kg.",
+            "class": "Cachorro",
+            "category": "Ração",
+            "subcategory": "Ração Seca",
+            "id": 5
           },
           {
-            "id": 6,
             "name": "Bifinhos",
-            "image": "/images/pizza-calabresa.jpg",
-            "description": "hubdjhudasashd, dbsujadbujbdskahd asdhuhdasdh.",
-            "shortDescription": "Bifinhos para cachorros."
+            "image": "/images/foto5.jpg",
+            "description": "Farinha de vísceras de frango, farinha de carne, milho integral moído, quirera de arroz gordura de frango, farelo de arroz desengordurado, hidrolisado de frango, premix vitamínico mineral, cloreto de sódio, cloreto de potássio, parede celular de levedura, antioxidantes BHA e BHT.",
+            "shortDescription": "Ração seca para cachorros adultos. Fórmula rica em nutrientes e minerais. Promove maior equilíbrio intestinal. Reduz o volume e odor das fezes. Disponível em embalagens de 15 kg e 20 kg.",
+            "class": "Cachorro",
+            "category": "Ração",
+            "subcategory": "Ração Seca",
+            "id": 6
+          },
+          {
+            "name": "Ração Seca",
+            "image": "/images/foto6.jpg",
+            "description": "Farinha de vísceras de frango, farinha de carne, milho integral moído, quirera de arroz gordura de frango, farelo de arroz desengordurado, hidrolisado de frango, premix vitamínico mineral, cloreto de sódio, cloreto de potássio, parede celular de levedura, antioxidantes BHA e BHT.",
+            "shortDescription": "Ração seca para cachorros adultos. Fórmula rica em nutrientes e minerais. Promove maior equilíbrio intestinal. Reduz o volume e odor das fezes. Disponível em embalagens de 15 kg e 20 kg.",
+            "class": "Cachorro",
+            "category": "Ração",
+            "subcategory": "Ração Seca",
+            "id": 7
+          },
+          {
+            "name": "Bifinhos",
+            "image": "/images/foto7.jpg",
+            "description": "Farinha de vísceras de frango, farinha de carne, milho integral moído, quirera de arroz gordura de frango, farelo de arroz desengordurado, hidrolisado de frango, premix vitamínico mineral, cloreto de sódio, cloreto de potássio, parede celular de levedura, antioxidantes BHA e BHT.",
+            "shortDescription": "Ração seca para cachorros adultos. Fórmula rica em nutrientes e minerais. Promove maior equilíbrio intestinal. Reduz o volume e odor das fezes. Disponível em embalagens de 15 kg e 20 kg.",
+            "class": "Cachorro",
+            "category": "Ração",
+            "subcategory": "Ração Seca",
+            "id": 8
+          },
+          {
+            "name": "Bifinhos",
+            "image": "/images/foto9.jpg",
+            "description": "Farinha de vísceras de frango, farinha de carne, milho integral moído, quirera de arroz gordura de frango, farelo de arroz desengordurado, hidrolisado de frango, premix vitamínico mineral, cloreto de sódio, cloreto de potássio, parede celular de levedura, antioxidantes BHA e BHT.",
+            "shortDescription": "Ração seca para cachorros adultos. Fórmula rica em nutrientes e minerais. Promove maior equilíbrio intestinal. Reduz o volume e odor das fezes. Disponível em embalagens de 15 kg e 20 kg.",
+            "class": "Cachorro",
+            "category": "Ração",
+            "subcategory": "Ração Seca",
+            "id": 9
+          },
+          {
+            "name": "Bifinhos",
+            "image": "/images/foto9.jpg",
+            "description": "Farinha de vísceras de frango, farinha de carne, milho integral moído, quirera de arroz gordura de frango, farelo de arroz desengordurado, hidrolisado de frango, premix vitamínico mineral, cloreto de sódio, cloreto de potássio, parede celular de levedura, antioxidantes BHA e BHT.",
+            "shortDescription": "Ração seca para cachorros adultos. Fórmula rica em nutrientes e minerais. Promove maior equilíbrio intestinal. Reduz o volume e odor das fezes. Disponível em embalagens de 15 kg e 20 kg.",
+            "class": "Cachorro",
+            "category": "Ração",
+            "subcategory": "Ração Seca",
+            "id": 10
+          },
+          {
+            "name": "Bifinhos",
+            "image": "/images/foto9.jpg",
+            "description": "Farinha de vísceras de frango, farinha de carne, milho integral moído, quirera de arroz gordura de frango, farelo de arroz desengordurado, hidrolisado de frango, premix vitamínico mineral, cloreto de sódio, cloreto de potássio, parede celular de levedura, antioxidantes BHA e BHT.",
+            "shortDescription": "Ração seca para cachorros adultos. Fórmula rica em nutrientes e minerais. Promove maior equilíbrio intestinal. Reduz o volume e odor das fezes. Disponível em embalagens de 15 kg e 20 kg.",
+            "class": "Cachorro",
+            "category": "Ração",
+            "subcategory": "Ração Seca",
+            "id": 11
+          },
+          {
+            "name": "Bifinhos",
+            "image": "/images/foto9.jpg",
+            "description": "Farinha de vísceras de frango, farinha de carne, milho integral moído, quirera de arroz gordura de frango, farelo de arroz desengordurado, hidrolisado de frango, premix vitamínico mineral, cloreto de sódio, cloreto de potássio, parede celular de levedura, antioxidantes BHA e BHT.",
+            "shortDescription": "Ração seca para cachorros adultos. Fórmula rica em nutrientes e minerais. Promove maior equilíbrio intestinal. Reduz o volume e odor das fezes. Disponível em embalagens de 15 kg e 20 kg.",
+            "class": "Cachorro",
+            "category": "Ração",
+            "subcategory": "Ração Seca",
+            "id": 12
+          },
+          {
+            "name": "Bifinhos",
+            "image": "/images/foto9.jpg",
+            "description": "Farinha de vísceras de frango, farinha de carne, milho integral moído, quirera de arroz gordura de frango, farelo de arroz desengordurado, hidrolisado de frango, premix vitamínico mineral, cloreto de sódio, cloreto de potássio, parede celular de levedura, antioxidantes BHA e BHT.",
+            "shortDescription": "Ração seca para cachorros adultos. Fórmula rica em nutrientes e minerais. Promove maior equilíbrio intestinal. Reduz o volume e odor das fezes. Disponível em embalagens de 15 kg e 20 kg.",
+            "class": "Cachorro",
+            "category": "Ração",
+            "subcategory": "Ração Seca",
+            "id": 13
+          },
+          {
+            "name": "Bifinhos",
+            "image": "/images/foto9.jpg",
+            "description": "Farinha de vísceras de frango, farinha de carne, milho integral moído, quirera de arroz gordura de frango, farelo de arroz desengordurado, hidrolisado de frango, premix vitamínico mineral, cloreto de sódio, cloreto de potássio, parede celular de levedura, antioxidantes BHA e BHT.",
+            "shortDescription": "Ração seca para cachorros adultos. Fórmula rica em nutrientes e minerais. Promove maior equilíbrio intestinal. Reduz o volume e odor das fezes. Disponível em embalagens de 15 kg e 20 kg.",
+            "class": "Cachorro",
+            "category": "Ração",
+            "subcategory": "Ração Seca",
+            "id": 14
+          },
+          {
+            "name": "Bifinhos",
+            "image": "/images/foto9.jpg",
+            "description": "Farinha de vísceras de frango, farinha de carne, milho integral moído, quirera de arroz gordura de frango, farelo de arroz desengordurado, hidrolisado de frango, premix vitamínico mineral, cloreto de sódio, cloreto de potássio, parede celular de levedura, antioxidantes BHA e BHT.",
+            "shortDescription": "Ração seca para cachorros adultos. Fórmula rica em nutrientes e minerais. Promove maior equilíbrio intestinal. Reduz o volume e odor das fezes. Disponível em embalagens de 15 kg e 20 kg.",
+            "class": "Cachorro",
+            "category": "Ração",
+            "subcategory": "Ração Seca",
+            "id": 15
+          },
+          {
+            "name": "Bifinhos",
+            "image": "/images/foto9.jpg",
+            "description": "Farinha de vísceras de frango, farinha de carne, milho integral moído, quirera de arroz gordura de frango, farelo de arroz desengordurado, hidrolisado de frango, premix vitamínico mineral, cloreto de sódio, cloreto de potássio, parede celular de levedura, antioxidantes BHA e BHT.",
+            "shortDescription": "Ração seca para cachorros adultos. Fórmula rica em nutrientes e minerais. Promove maior equilíbrio intestinal. Reduz o volume e odor das fezes. Disponível em embalagens de 15 kg e 20 kg.",
+            "class": "Cachorro",
+            "category": "Ração",
+            "subcategory": "Ração Seca",
+            "id": 16
+          },
+          {
+            "name": "Bifinhos",
+            "image": "/images/foto9.jpg",
+            "description": "Farinha de vísceras de frango, farinha de carne, milho integral moído, quirera de arroz gordura de frango, farelo de arroz desengordurado, hidrolisado de frango, premix vitamínico mineral, cloreto de sódio, cloreto de potássio, parede celular de levedura, antioxidantes BHA e BHT.",
+            "shortDescription": "Ração seca para cachorros adultos. Fórmula rica em nutrientes e minerais. Promove maior equilíbrio intestinal. Reduz o volume e odor das fezes. Disponível em embalagens de 15 kg e 20 kg.",
+            "class": "Cachorro",
+            "category": "Ração",
+            "subcategory": "Ração Seca",
+            "id": 17
+          },
+          {
+            "name": "Bifinhos",
+            "image": "/images/foto9.jpg",
+            "description": "Farinha de vísceras de frango, farinha de carne, milho integral moído, quirera de arroz gordura de frango, farelo de arroz desengordurado, hidrolisado de frango, premix vitamínico mineral, cloreto de sódio, cloreto de potássio, parede celular de levedura, antioxidantes BHA e BHT.",
+            "shortDescription": "Ração seca para cachorros adultos. Fórmula rica em nutrientes e minerais. Promove maior equilíbrio intestinal. Reduz o volume e odor das fezes. Disponível em embalagens de 15 kg e 20 kg.",
+            "class": "Cachorro",
+            "category": "Ração",
+            "subcategory": "Ração Seca",
+            "id": 18
+          },
+          {
+            "name": "Bifinhos",
+            "image": "/images/foto9.jpg",
+            "description": "Farinha de vísceras de frango, farinha de carne, milho integral moído, quirera de arroz gordura de frango, farelo de arroz desengordurado, hidrolisado de frango, premix vitamínico mineral, cloreto de sódio, cloreto de potássio, parede celular de levedura, antioxidantes BHA e BHT.",
+            "shortDescription": "Ração seca para cachorros adultos. Fórmula rica em nutrientes e minerais. Promove maior equilíbrio intestinal. Reduz o volume e odor das fezes. Disponível em embalagens de 15 kg e 20 kg.",
+            "class": "Cachorro",
+            "category": "Ração",
+            "subcategory": "Ração Seca",
+            "id": 19
+          },
+          {
+            "name": "Bifinhos",
+            "image": "/images/foto9.jpg",
+            "description": "Farinha de vísceras de frango, farinha de carne, milho integral moído, quirera de arroz gordura de frango, farelo de arroz desengordurado, hidrolisado de frango, premix vitamínico mineral, cloreto de sódio, cloreto de potássio, parede celular de levedura, antioxidantes BHA e BHT.",
+            "shortDescription": "Ração seca para cachorros adultos. Fórmula rica em nutrientes e minerais. Promove maior equilíbrio intestinal. Reduz o volume e odor das fezes. Disponível em embalagens de 15 kg e 20 kg.",
+            "class": "Cachorro",
+            "category": "Ração",
+            "subcategory": "Ração Seca",
+            "id": 20
           }
         ],
         "inscriptions": [
