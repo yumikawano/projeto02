@@ -1,11 +1,11 @@
 [![MIT License](https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-)](https://github.com/Infnet-1T22/pj2-3-portal-cursos/blob/main/LICENSE)
+)](https://github.com/yumikawano/projeto02/blob/main/LICENSE)
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555)](https://www.linkedin.com/in/yumi-kawano/)
 
 
 <br />
 <div align="center">
-  <a href="https://astounding-starburst-15d0f8.netlify.app/">
+    <a href="https://sad-cori-ec4c3e.netlify.app/">
     <img src="front-end/src/assets/img/foto1.png" alt="Logo Infnet" width="200" height="55">
   </a>
 
