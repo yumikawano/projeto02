@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "json-server --watch db.json --port $PORT --host 0.0.0.0", 
-    "start-dev": "json-server --watch db.json --port 3001"
+    "start": "json-server --watch db.json --port $PORT --host 0.0.0.0",
+    "start-dev": "cross-env PORT=3001 npm run start"
   },
   "keywords": [],
   "author": "",
