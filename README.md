@@ -24,11 +24,11 @@
 
 
 # Autor
-Victor de Assis Campos Oliveira - victor.doliveira@prof.infnet.edu.br
+Yumi Kawano - yumikawano@outlook.com
 
-https://www.linkedin.com/in/victorassis/
+https://www.linkedin.com/in/yumi-kawano/
 
 
 # Licença
 
-Este projeto esta sobe a licença MIT. Veja [LICENSE](https://github.com/Infnet-1T22/pj2-3-portal-cursos/blob/main/LICENSE) para mais informações.
+Este projeto esta sobe a licença MIT. Veja [LICENSE](https://github.com/yumikawano/projeto02/blob/main/LICENSE) para mais informações.
