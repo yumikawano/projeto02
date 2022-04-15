@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Alert, Col, Container, Row } from 'react-bootstrap'
 import { CardProducts } from '../../components/CardProducts'
 import { Layout } from '../../components/Layout'
-import { Loading } from '../../components/Loanding'
+import { Loading } from '../../components/Loading'
 
 export function ProductsView () {
   const [products, setProducts] = useState([])

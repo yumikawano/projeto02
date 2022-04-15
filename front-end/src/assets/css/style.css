@@ -53,3 +53,7 @@ header{
 .col{
     text-align: center;
 }
+
+.course-detail-container {
+    max-width: 900px;
+}

@@ -9,7 +9,7 @@ function App() {
     <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/produtos' element={<ProductsView />} />
-      <Route path='/cursos/:id' element={<ProductDetailView />} />
+      <Route path='/produtos/:id' element={<ProductDetailView />} />
       <Route path='*' element={<NotFoundView />} />
     </Routes>
   );
