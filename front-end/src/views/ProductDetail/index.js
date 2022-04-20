@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import { Alert, Container } from "react-bootstrap";
+import { Alert, Container, Form } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import { Layout } from "../../components/Layout";
 import { Loading } from "../../components/Loading";
@@ -44,20 +44,25 @@ export function ProductDetailView () {
           <Alert variant="danger" className="mt-3">{errorMsg}</Alert>
         ) : (
           <>
-           <h1 className="text-center mt-4">{product.name}</h1>
-           <div class="card" className="width: 18rem;">
-           <div class="container">
-  <div class="row">
-    <div class="col">
+           <div className="container">
+  <div className="row">
+    <div className="col">
       <img src={product.image} className="card-img-left" alt="..."></img>
     </div>
-    <div class="col">
-  <div class="card-body">
-    <p class="card-text">{product.description}</p>
-    <button  as={Link} to={`/produtos/${product.id}`} class="btn btn-danger">Comprar</button>
-    </div>
-  </div>
+    <div className="col">
+  <div className="card-body">
+  <h1 className="text-center mt-4 h3">{product.name}</h1>
+    <p className="card-text mt-5">{product.description}</p>
+    <Form.Select aria-label="Default select example">
+          <option>Selecione o tamanho</option>
+          <option value="1">1kg</option>
+          <option value="2">2,5kg</option>
+          <option value="3">13kg</option>
+        </Form.Select>
+        <p className="h4">{product.price}</p>
+        <button as={Link} to={`/produtos/${product.id}`} className="btn btn-danger">Adicionar ao carrinho</button>
 </div>
+    </div>
   </div>
 </div>
         </>
