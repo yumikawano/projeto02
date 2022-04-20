@@ -78,7 +78,7 @@ const initialFormData = {
             required
           />
         </Form.Group>
-        <Form>
+        </Form>
         <Form.Group controlId="inscription-number" className="mb-3">
           <Form.Label className="m-0">Celular</Form.Label>
           <Form.Control
