@@ -4,8 +4,7 @@ import { useParams } from "react-router-dom";
 import { Layout } from "../../components/Layout";
 import { Loading } from "../../components/Loading";
 import { NotFoundView } from "../NotFound";
-import { InscriptionForm } from "./InscriptionForm";
-import { Inscriptions } from "./Inscriptions";
+import { Link } from "react-router-dom";
 
 export function ProductDetailView () {
   const { id } = useParams()
@@ -46,12 +45,24 @@ export function ProductDetailView () {
         ) : (
           <>
            <h1 className="text-center mt-4">{product.name}</h1>
-          <p><strong>Administrador:</strong> {product.coordinator}</p>
-          <p>{product.description}</p>
-          <Inscriptions inscriptions={product.inscriptions} />
-          <InscriptionForm productId={id} onRegister={fetchProduct} />
+           <div class="card" className="width: 18rem;">
+           <div class="container">
+  <div class="row">
+    <div class="col">
+      <img src={product.image} className="card-img-left" alt="..."></img>
+    </div>
+    <div class="col">
+  <div class="card-body">
+    <p class="card-text">{product.description}</p>
+    <button  as={Link} to={`/produtos/${product.id}`} class="btn btn-danger">Comprar</button>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
         </>
         )}
+        
       </Container>
     </Layout>
   )

@@ -9,7 +9,8 @@ export function CardProducts ({ product }) {
       <Card.Body className='d-flex flex-column align-items-center'>
         <Card.Title as='h2' className='h5'>{product.name}</Card.Title>
         <Card.Text>{product.shortDescription}</Card.Text>
-        <Button as={Link} to={`/produtos/${product.id}`} className='mt-auto'>Ver mais</Button>
+        <Card.Text as='h5' className='danger' >{product.price}</Card.Text>
+            <Button as={Link} to={`/produtos/${product.id}`} className='btn btn-danger'>Saiba mais</Button>
       </Card.Body>
     </Card>
   )
