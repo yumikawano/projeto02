@@ -14,7 +14,7 @@
   <p align="center">
     Catálogo de produtos do Pet Mania onde o cliente pode se cadastrar e selecionar os produtos desejados para compras com maior comodidade.
     <br />
-    <a href="https://astounding-starburst-15d0f8.netlify.app/"><strong>Acessar demonstração »</strong></a>
+    <a href="https://projeto02-blue.vercel.app/"><strong>Acessar demonstração »</strong></a>
   </p>
 
   <h4 align="center"> 
