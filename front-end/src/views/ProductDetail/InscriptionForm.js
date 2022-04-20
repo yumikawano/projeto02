@@ -1,11 +1,15 @@
 import { useState } from "react"
 import { Alert, Button, Form } from "react-bootstrap"
+import { Layout } from "../../components/Layout"
 
 const initialFormData = {
     userName: '',
     userEmail: '',
     userNumber: '',
-    userAddress: ''
+    userAddress: '',
+    userBirth: '',
+    userCPF: '',
+    userpassword: ''
   }
   
   export function InscriptionForm ({ productId, onRegister }) {
@@ -49,7 +53,7 @@ const initialFormData = {
         setIsSubmiting(false)
       }
   return (
-    <>
+    <Layout>
       <h2>Formulário de Cadastro</h2>
       {showSuccess && (
         <Alert variant="success" dismissible onClose={() => setShowSuccess(false)}>Cadastro realizado com sucesso.</Alert>
@@ -102,6 +106,6 @@ const initialFormData = {
         </Form.Group>
         <Button type='submit' disabled={isSubmiting}>Cadastrar</Button>
       </Form>
-    </>
+    </Layout>
   )
 } 
