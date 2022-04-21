@@ -60,7 +60,7 @@ export function ProductDetailView () {
           <option value="3">13kg</option>
         </Form.Select>
         <p className="h4">{product.price}</p>
-        <button as={Link} to={`/produtos/${product.id}`} className="btn btn-danger">Adicionar ao carrinho</button>
+        <button as={Link} to={`/cart/${product.id}`} className="btn btn-danger">Adicionar ao carrinho</button>
 </div>
     </div>
   </div>

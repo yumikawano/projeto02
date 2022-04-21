@@ -429,7 +429,7 @@ export function Header() {
                   </i>
                 </Button>
               </Form>
-              <Button id="btn-login" variant="Danger" as={Link} to="/formulario">
+              <Button id="btn-login" variant="Danger" as={Link} to="/login">
                 <i className="bi bi-person-circle">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

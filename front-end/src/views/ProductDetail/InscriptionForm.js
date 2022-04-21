@@ -9,7 +9,7 @@ const initialFormData = {
     userAddress: '',
     userBirth: '',
     userCPF: '',
-    userpassword: ''
+    userPassword: ''
   }
   
   export function InscriptionForm ({ productId, onRegister }) {
@@ -37,6 +37,9 @@ const initialFormData = {
               email: formData.userEmail,
               number: formData.userNumber,
               address: formData.userAddress,
+              birth: formData.userBirth,
+              cpf: formData.userCPF,
+              password: formData.userPassword,
               productId: parseInt(productId)
             }),
             headers: {
@@ -101,6 +104,36 @@ const initialFormData = {
             value={formData.userAddress}
             onChange={handleChange}
             name="userAddress"
+            required
+          />
+        </Form.Group>
+        <Form.Group controlId="inscription-number" className="mb-3">
+        <Form.Label className="m-0">Data de nascimento</Form.Label>
+        <Form.Control
+            placeholder="Informe sua data de nascimento"
+            value={formData.userBirth}
+            onChange={handleChange}
+            name="userBirth"
+            required
+          />
+        </Form.Group>
+        <Form.Group controlId="inscription-number" className="mb-3">
+        <Form.Label className="m-0">CPF</Form.Label>
+        <Form.Control
+            placeholder="Informe seu CPF"
+            value={formData.userCPF}
+            onChange={handleChange}
+            name="userCPF"
+            required
+          />
+        </Form.Group>
+        <Form.Group controlId="inscription-name" className="mb-3">
+          <Form.Label className="m-0">Senha</Form.Label>
+          <Form.Control
+            placeholder="Informe sua senha"
+            value={formData.userPassword}
+            onChange={handleChange}
+            name="userPassword"
             required
           />
         </Form.Group>
