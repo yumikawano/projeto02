@@ -447,7 +447,7 @@ export function Header() {
                   </svg>
                 </i>
               </Button>
-              <Button id="btn-cart" variant="Danger">
+              <Button id="btn-cart" variant="Danger" as={Link} to="/cart">
                 <i className="bi bi-cart-fill">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
