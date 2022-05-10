@@ -10,9 +10,16 @@ import {
   } from "react-bootstrap";
 import { Link } from "react-router-dom";
   import Logo from "../../assets/img/foto1.png";
+  import { useState } from "react";
+  import { CartSummary } from "../Cart/CartSummary"
 
-export function Header() {
+
+export const Header = ({ productsCard, setProductsCard }) => {
+  const [showCart, setShowCart] = useState(false)
+  const handleOpen = () => setShowCart(true)
+  const handleClose = () => setShowCart(false)
     return (
+      <>
       <header>
         <Navbar expand="lg">
           <Container>
@@ -447,7 +454,7 @@ export function Header() {
                   </svg>
                 </i>
               </Button>
-              <Button id="btn-cart" variant="Danger" as={Link} to="/cart">
+              <Button id="btn-cart" variant="Danger" onClick={handleOpen}>
                 <i className="bi bi-cart-fill">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -462,10 +469,15 @@ export function Header() {
                 </i>
                 <span className="btn-cart-badge"></span>
               </Button>
+              <CartSummary show={showCart} handleClose={handleClose}
+              productsCard={productsCard}
+              setProductsCard={setProductsCard}
+              />
             </Navbar.Collapse>
           </Container>
-        </Navbar>
+        </ Navbar>
       </header>
+      </>
     );
   }
   

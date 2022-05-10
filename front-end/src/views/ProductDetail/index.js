@@ -4,20 +4,17 @@ import { useParams } from "react-router-dom";
 import { Layout } from "../../components/Layout";
 import { Loading } from "../../components/Loading";
 import { NotFoundView } from "../NotFound";
-import { Link } from "react-router-dom";
+import { getProductsById } from "../../services/Products.service";
+import { AddToCart } from "../../components/Cart/AddToCart";
 
-export function ProductDetailView () {
+export const ProductDetailView = ({ name, image, productsCard, setProductsCard }) => {
   const { id } = useParams()
   const [product, setProduct] = useState()
   const [loading, setLoading] = useState(true)
   const [errorMsg, setErrorMsg] = useState()
   const fetchProduct = useCallback(async () => {
     try {
-      const response = await fetch(`${process.env.REACT_APP_API_URL}/products/${id}?_embed=inscriptions`)
-      if (!response.ok) {
-        throw new Error('Response not ok.')
-      }
-      const data = await response.json()
+      const data = await getProductsById(id)
       setProduct(data)
       setLoading(false)
     } catch (err) {
@@ -60,7 +57,13 @@ export function ProductDetailView () {
           <option value="3">13kg</option>
         </Form.Select>
         <p className="h4">{product.price}</p>
-        <button as={Link} to={`/cart/${product.id}`} className="btn btn-danger">Adicionar ao carrinho</button>
+        <AddToCart 
+          productsCard={productsCard}
+          setProductsCard={setProductsCard}
+          id={product.id}
+          image={product.image}
+          name={product.name}
+        />
 </div>
     </div>
   </div>

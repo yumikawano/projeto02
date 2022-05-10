@@ -1,8 +1,9 @@
 
 import { Button, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { AddToCart } from "../Cart/AddToCart";
 
-export function CardProducts ({ product }) {
+export const CardProducts = ({ productsCard, setProductsCard, product }) => {
   return (
     <Card className='text-center shadow h-100'>
       <Card.Img variant="top"  src={product.image} alt={product.name} />
@@ -10,7 +11,14 @@ export function CardProducts ({ product }) {
         <Card.Title as='h2' className='h5'>{product.name}</Card.Title>
         <Card.Text>{product.shortDescription}</Card.Text>
         <Card.Text as='h5'>{product.price}</Card.Text>
-            <Button as={Link} to={`/produtos/${product.id}`} className='btn btn-danger'>Saiba mais</Button>
+            <Button as={Link} to={`/produtos/${product.id}`} className='btn-light btn-outline-danger'>Saiba mais</Button>
+            <AddToCart 
+          productsCard={productsCard}
+          setProductsCard={setProductsCard}
+          id={product.id}
+          image={product.image}
+          name={product.name}
+        />
       </Card.Body>
     </Card>
   )

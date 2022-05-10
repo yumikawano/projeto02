@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Alert, Button, Form } from "react-bootstrap"
 import { Layout } from "../../components/Layout"
+import { createInscription } from "../../services/Inscriptions.service"
 
 const initialFormData = {
     userName: '',
@@ -30,22 +31,16 @@ const initialFormData = {
         try {
           setErrorMsg(undefined)
           setIsSubmiting(true)
-          await fetch(`${process.env.REACT_APP_API_URL}/inscriptions`, {
-            method: 'POST',
-            body: JSON.stringify({
-              name: formData.userName,
-              email: formData.userEmail,
-              number: formData.userNumber,
-              address: formData.userAddress,
-              birth: formData.userBirth,
-              cpf: formData.userCPF,
-              password: formData.userPassword,
-              productId: parseInt(productId)
-            }),
-            headers: {
-              'content-type': 'application/json'
-            }
-          })
+          await createInscription({
+            name: formData.userName,
+            email: formData.userEmail,
+            number: formData.userNumber,
+            address: formData.userAddress,
+            birth: formData.userBirth,
+            cpf: formData.userCPF,
+            password: formData.userPassword,
+            productId: parseInt(productId)
+            })
           setShowSuccess(true)
           setFormData(initialFormData)
           onRegister()
