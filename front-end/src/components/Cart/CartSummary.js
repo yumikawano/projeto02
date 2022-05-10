@@ -1,14 +1,11 @@
 import {  Button, Modal, Table } from "react-bootstrap";
+import { useDispatch, useSelector } from "react-redux"
 
-export const CartSummary = ({ show, handleClose, productsCard, setProductsCard }) => {
-  const handleRemove = id => {
-    const newProductsCard = productsCard.filter(
-      product => product.id !== id
-    )
-    setProductsCard(newProductsCard)
-  }
+export const CartSummary = () => {
+  const dispatch = useDispatch();
+  const productsCart = useSelector(state => state.cart)
   return (
-    <Modal show={show} onHide={handleClose}>
+    <Modal show={true} onHide={()=>{}}>
       <Modal.Header closeButton>
         <Modal.Title>Carrinho</Modal.Title>
       </Modal.Header>
@@ -22,19 +19,19 @@ export const CartSummary = ({ show, handleClose, productsCard, setProductsCard }
             </tr>
           </thead>
           <tbody>
-            {productsCard?.length === 0 ? (
+            {productsCart?.length === 0 ? (
               <tr>
                 <td colSpan={3}>Seu carrinho está vazio.</td>
               </tr>
-            ) : productsCard.map(product => (
+            ) : productsCart.map(product => (
               <tr key={product.id}>
-                <td>{product.name}</td>
-                <td>{product.qty}</td>
+                <td>{product.nome}</td>
+                <td>{product.quantidade}</td>
                 <td>
                 <Button
                     variant='danger'
                     size='sm'
-                    onClick={() => handleRemove(product.id)}
+                    onClick={() => {}}//handleRemove(product.id)
                   >Remover</Button>
                 </td>
               </tr>
