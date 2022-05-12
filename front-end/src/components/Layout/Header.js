@@ -1,4 +1,3 @@
-
 import {
     Container,
     Navbar,
@@ -9,15 +8,11 @@ import {
     Button,
   } from "react-bootstrap";
 import { Link } from "react-router-dom";
-  import Logo from "../../assets/img/foto1.png";
-  import { useState } from "react";
-  import { CartSummary } from "../Cart/CartSummary"
+import Logo from "../../assets/img/foto1.png";
+import { CartSummary } from "../Cart/CartSummary"
 
 
-export const Header = ({ productsCard, setProductsCard }) => {
-  const [showCart, setShowCart] = useState(false)
-  const handleOpen = () => setShowCart(true)
-  const handleClose = () => setShowCart(false)
+  export const Header = () => {
     return (
       <>
       <header>
@@ -454,7 +449,7 @@ export const Header = ({ productsCard, setProductsCard }) => {
                   </svg>
                 </i>
               </Button>
-              <Button id="btn-cart" variant="Danger" onClick={handleOpen}>
+              <Button id="btn-cart" variant="Danger" onClick={()=>{}}>
                 <i className="bi bi-cart-fill">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -469,10 +464,7 @@ export const Header = ({ productsCard, setProductsCard }) => {
                 </i>
                 <span className="btn-cart-badge"></span>
               </Button>
-              <CartSummary show={showCart} handleClose={handleClose}
-              productsCard={productsCard}
-              setProductsCard={setProductsCard}
-              />
+              <CartSummary />
             </Navbar.Collapse>
           </Container>
         </ Navbar>
