@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
     Container,
     Navbar,
@@ -12,7 +13,10 @@ import Logo from "../../assets/img/foto1.png";
 import { CartSummary } from "../Cart/CartSummary"
 
 
-  export const Header = () => {
+export const Header = () => {
+  const [showCart, setShowCart] = useState(false)
+  const handleOpen = () => setShowCart(true)
+  const handleClose = () => setShowCart(false)
     return (
       <>
       <header>
@@ -449,7 +453,7 @@ import { CartSummary } from "../Cart/CartSummary"
                   </svg>
                 </i>
               </Button>
-              <Button id="btn-cart" variant="Danger" onClick={()=>{}}>
+              <Button id="btn-cart" variant="Danger" onClick={handleOpen}>
                 <i className="bi bi-cart-fill">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -464,7 +468,10 @@ import { CartSummary } from "../Cart/CartSummary"
                 </i>
                 <span className="btn-cart-badge"></span>
               </Button>
-              <CartSummary />
+              <CartSummary 
+               show={showCart}
+               handleClose={handleClose}
+              />
             </Navbar.Collapse>
           </Container>
         </ Navbar>

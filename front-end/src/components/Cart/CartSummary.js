@@ -1,11 +1,16 @@
 import {  Button, Modal, Table } from "react-bootstrap";
-import { useDispatch, useSelector } from "react-redux"
+import { useDispatch, useSelector } from "react-redux";
+import { selectCart } from "../../store/Cart/Cart.selectors"
+import { removeOfCart } from "../../store/Cart/Cart.actions"
 
-export const CartSummary = () => {
-  const dispatch = useDispatch();
-  const productsCart = useSelector(state => state.cart)
+export const CartSummary = ({ show, handleClose }) => {
+  const dispatch = useDispatch()
+  const productsCart = useSelector(selectCart)
+  const handleRemove = id => {
+    dispatch(removeOfCart(id))
+  }
   return (
-    <Modal show={true} onHide={()=>{}}>
+    <Modal show={show} onHide={handleClose}>
       <Modal.Header closeButton>
         <Modal.Title>Carrinho</Modal.Title>
       </Modal.Header>
@@ -31,7 +36,7 @@ export const CartSummary = () => {
                 <Button
                     variant='danger'
                     size='sm'
-                    onClick={() => {}}//handleRemove(product.id)
+                    onClick={() => handleRemove(product.id)}
                   >Remover</Button>
                 </td>
               </tr>

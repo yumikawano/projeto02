@@ -1,12 +1,4 @@
-const initialValue = [{
-    id: 1,
-    nome: "ração",
-    quantidade: 1
-},{
-    id: 2,
-    nome: "brinquedo",
-    quantidade: 2
-}]
+const initialValue = []
 
 export const CartReducer = (state = initialValue, action) => {
   switch (action.type) {

@@ -1,33 +1,26 @@
 
 import { Button } from "react-bootstrap"
+import { useDispatch, useSelector } from "react-redux"
+import { addToCart, removeOfCart } from "../../store/Cart/Cart.actions"
+import { selectCart } from "../../store/Cart/Cart.selectors"
 
-export const AddToCart = ({ productsCard, setProductsCard, id, image, name }) => {
-  const productFound = productsCard.findIndex(
+export const AddToCart = ({ id, name }) => {
+  const dispatch = useDispatch()
+  const productsCart = useSelector(selectCart)
+  const productFound = productsCart.findIndex(
     product => product.id === id
   )
   const handleAdd = () => {
-    const newProductsCard = [...productsCard]
-    if (productFound !== -1) {
-      newProductsCard[productFound].qty++
-    } else {
-      newProductsCard.push({
-        id,
-        image,
-        name,
-        qty: 1
-      })
-    }
-    setProductsCard(newProductsCard)
+    dispatch(addToCart(id, name))
   }
   const handleRemove = () => {
-    const newProductsCard = productsCard.filter(
-      product => product.id !== id
-    )
-    setProductsCard(newProductsCard)
+    dispatch(removeOfCart(id))
   }
   return (
     <>
-      <Button variant="danger" block onClick={handleAdd}>{productFound !== -1 ? 'Adicionar mais um' : 'Adicionar'}</Button>
+      <Button variant="danger" block onClick={handleAdd}>
+        {productFound !== -1 ? 'Adicionar mais um' : 'Adicionar'}
+        </Button>
       {productFound !== -1 && (
         <Button variant="danger" size="sm" block onClick={handleRemove}>Remover</Button>
       )}
