@@ -12,6 +12,7 @@ switch (action.type) {
     } else {
       newState.push({
         id: action.payload.id,
+        image: action.payload.image,
         name: action.payload.name,
         qty: 1
       })

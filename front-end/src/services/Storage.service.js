@@ -1,4 +1,4 @@
-const prefixKey = '@petMania/'
+const prefixKey = '@portalProdutos/'
 
 export const setStorageItem = (key, value) => {
   localStorage.setItem(`${prefixKey}${key}`, value)

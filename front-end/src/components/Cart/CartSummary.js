@@ -1,7 +1,8 @@
 import {  Button, Modal, Table } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
-import { selectCart } from "../../store/Cart/Cart.selectors"
-import { removeOfCart } from "../../store/Cart/Cart.actions"
+import { selectCart } from "../../store/Cart/Cart.selectors";
+import { removeOfCart } from "../../store/Cart/Cart.actions";
+import { Link } from "react-router-dom"
 
 export const CartSummary = ({ show, handleClose }) => {
   const dispatch = useDispatch()
@@ -9,6 +10,7 @@ export const CartSummary = ({ show, handleClose }) => {
   const handleRemove = id => {
     dispatch(removeOfCart(id))
   }
+
   return (
     <Modal show={show} onHide={handleClose}>
       <Modal.Header closeButton>
@@ -18,6 +20,7 @@ export const CartSummary = ({ show, handleClose }) => {
         <Table>
           <thead>
             <tr>
+              <th>#</th>
               <th>Produto</th>
               <th>Quantidade</th>
               <th>#</th>
@@ -30,8 +33,9 @@ export const CartSummary = ({ show, handleClose }) => {
               </tr>
             ) : productsCart.map(product => (
               <tr key={product.id}>
-                <td>{product.nome}</td>
-                <td>{product.quantidade}</td>
+                <td>{product.image}</td>
+                <td>{product.name}</td>
+                <td>{product.qty}</td>
                 <td>
                 <Button
                     variant='danger'
@@ -41,6 +45,16 @@ export const CartSummary = ({ show, handleClose }) => {
                 </td>
               </tr>
             ))}
+          </tbody>
+          <tbody>
+          <tr>
+            <td>
+            <Button as={Link} to="/produtos" href="/produtos" variant='btn-light btn-outline-dark' className="btn-add-item">ADICIONAR MAIS ITENS</Button>
+            </td>
+            <td>
+            <Button as={Link} to="/produtos" hreaf="#action3.2" variant='btn-dark btn-outline-dark' className="btn-pedido">FAZER PEDIDO</Button>
+            </td>
+          </tr>
           </tbody>
         </Table>
       </Modal.Body>

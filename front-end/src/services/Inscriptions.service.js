@@ -1,11 +1,12 @@
-import { apiUrl } from "./Api.service"
+import { apiUrl, getAuthorizationHeaders } from "./Api.service"
 
 export const createInscription = async (inscriptionData) => {
   const response = await fetch(`${apiUrl}/inscriptions`, {
     method: 'POST',
     body: JSON.stringify(inscriptionData),
     headers: {
-      'content-type': 'application/json'
+      'content-type': 'application/json',
+      ...getAuthorizationHeaders()
     }
   })
   if (!response.ok) {
