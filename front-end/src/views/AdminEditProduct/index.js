@@ -3,44 +3,44 @@ import { useNavigate, useParams } from "react-router-dom";
 import { toast } from "react-toastify";
 import { LayoutPortal } from "../../components/LayoutPortal";
 import { Loading } from "../../components/Loading";
-import { UpsertCourseForm } from "../../components/UpsertCourseForm";
-import { getCourseById, updateCourse } from "../../services/Courses.service";
+import { UpsertProductForm } from "../../components/UpsertProductForm";
+import { getProductById, updateProduct } from "../../services/Products.service"
 
-export function AdminEditCourseView () {
+export function AdminEditProductView () {
   const { id } = useParams()
-  const [course, setCourse] = useState()
+  const [product, setProduct] = useState()
   useEffect(() => {
-    const fetchCourse = async () => {
+    const fetchProduct = async () => {
       try {
-        const courseData = await getCourseById(id)
-        setCourse(courseData)
+        const productData = await getProductById(id)
+        setProduct(productData)
       } catch {
-        toast.error('Falha ao buscar dados do curso. Recarregue a página.')
+        toast.error('Falha ao buscar dados do produto. Recarregue a página.')
       }
     }
-    fetchCourse()
+    fetchProduct()
   }, [id])
   const navigate = useNavigate()
   const handleSubmit = async (formData) => {
     try {
-      await updateCourse(id, formData)
-      toast.success('Curso alterado com sucesso.')
-      navigate('/portal/cursos')
+      await updateProduct(id, formData)
+      toast.success('Produto alterado com sucesso.')
+      navigate('/portal/produtos')
     } catch {
-      toast.error('Falha ao alterar curso. Tente novamente.')
+      toast.error('Falha ao alterar produto. Tente novamente.')
     }
   }
   return (
     <LayoutPortal>
-      <h1 className="mt-4">Editar curso</h1>
-      {course ? (
-        <UpsertCourseForm
+      <h1 className="mt-4">Editar produto</h1>
+      {product ? (
+        <UpsertProductForm
           initialValue={{
-            name: course.name,
-            coordinator: course.coordinator,
-            shortDescription: course.shortDescription,
-            description: course.description,
-            image: course.image
+            name: product.name,
+            coordinator: product.coordinator,
+            shortDescription: product.shortDescription,
+            description: product.description,
+            image: product.image
           }}
           buttonLabel='Alterar'
           onSubmit={handleSubmit}
