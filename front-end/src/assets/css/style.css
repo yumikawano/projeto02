@@ -54,6 +54,20 @@ header{
     text-align: center;
 }
 
-.course-detail-container {
+.product-detail-container {
     max-width: 900px;
+}
+
+.btn-add-item {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.btn-pedido {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
 }
