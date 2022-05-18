@@ -866,5 +866,21 @@
     {
       "id": "1"
     }
+  ],
+  "users": [
+    {
+      "email": "aluno@aluno.com",
+      "password": "$2a$10$DSESAWzv.yQhvKixasmoaefzmxrdua9Nc/rhCQ9.Axz1EVDhh.mcK",
+      "name": "Aluno",
+      "type": 2,
+      "id": 1
+    },
+    {
+      "email": "admin@admin.com",
+      "password": "$2a$10$bAfCwprOvEl8OMD1yUJzL.MTUx8Ks4dzkBaeoVMefYgoeG98cBxp6",
+      "name": "Administrador",
+      "type": 1,
+      "id": 2
+    }
   ]
 }
