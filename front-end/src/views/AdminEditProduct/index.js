@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 import { LayoutPortal } from "../../components/LayoutPortal";
 import { Loading } from "../../components/Loading";
 import { UpsertProductForm } from "../../components/UpsertProductForm";
-import { getProductById, updateProduct } from "../../services/Products.service"
+import { getProductsById, updateProduct } from "../../services/Products.service"
 
 export function AdminEditProductView () {
   const { id } = useParams()
@@ -12,7 +12,7 @@ export function AdminEditProductView () {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const productData = await getProductById(id)
+        const productData = await getProductsById(id)
         setProduct(productData)
       } catch {
         toast.error('Falha ao buscar dados do produto. Recarregue a página.')

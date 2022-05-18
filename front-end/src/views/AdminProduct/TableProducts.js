@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 import { deleteProduct } from "../../services/Products.service";
 
 export function TableProducts ({ products, onDeleteProduct }) {
-  const [productToDelete, setproductToDelete] = useState()
+  const [productToDelete, setProductToDelete] = useState()
   const hideModal = () => setProductToDelete(undefined)
   const handleClick = (product) => {
     setProductToDelete(product)

@@ -8,7 +8,7 @@ export const getProducts = async () => {
   return response.json()
 }
 
-export const getProductById = async (productId) => {
+export const getProductsById = async (productId) => {
   const response = await fetch(`${apiUrl}/produtos/${productId}?_embed=inscriptions`)
   if (!response.ok) {
     throw new Error('Response not ok.')
