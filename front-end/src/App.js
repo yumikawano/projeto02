@@ -9,7 +9,8 @@ import { DashboardView } from "./views/Dashboard";
 import { Home } from "./views/Home";
 import { NotFoundView } from "./views/NotFound";
 import { InscriptionForm } from "./views/Login/InscriptionForm";
-import {Login} from "./views/Login/login";
+import { RegisterForm } from "./components/AuthForm/RegisterForm";
+import { LoginForm } from "./components/AuthForm/LoginForm"
 
 function App() {
   return (
@@ -21,8 +22,9 @@ function App() {
       <Route path='/portal/produtos' element={<PrivateRoute userTypes={[1]}><AdminProductsView /></PrivateRoute>} />
       <Route path='/portal/produtos/cadastro' element={ <PrivateRoute userTypes={[1]}><AdminAddProductView /></PrivateRoute>} />
       <Route path='/portal/produtos/:id' element={<PrivateRoute userTypes={[1]}><AdminEditProductView /></PrivateRoute>} />
-      <Route path='/portal/login' element={<Login />} />
       <Route path='/formulario' element={<InscriptionForm />} />
+      <Route path='/cadastro' element={<RegisterForm />} />
+      <Route path='/login' element={<LoginForm />} />
       <Route path='*' element={<NotFoundView />} />
     </Routes>
   );

@@ -881,6 +881,28 @@
       "name": "Administrador",
       "type": 1,
       "id": 2
+    },
+    {
+      "email": "yumikawano5412@gmail.com",
+      "password": "$2a$10$RzDAq0WrgQdtOkDnc70hl.xQSvAN/mt638/3zQfqz4.pLNbJcs2Da",
+      "name": "Yumi",
+      "type": 2,
+      "id": 3
+    },
+    {
+      "email": "camila.domingos@al.infnet.edu.br",
+      "password": "$2a$10$kegvVe36gxVPzv0tdsBfDeu351lASY2m1meXX4/v5ACn8z1kxpYtS",
+      "name": "CAMILA YUMI KAWANO DOMINGOS",
+      "number": "44988251854",
+      "address": "av. mauá",
+      "nº": "1308",
+      "cidade": "Maringá",
+      "bairro": "zona 03",
+      "complemento": "A 71",
+      "birth": "19/12/1994",
+      "cpf": "07172533682",
+      "type": 2,
+      "id": 4
     }
   ]
 }

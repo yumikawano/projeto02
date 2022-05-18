@@ -3,6 +3,7 @@ import { Alert, Button, Form } from "react-bootstrap"
 import { Layout } from "../../components/Layout"
 import { createInscription } from "../../services/Inscriptions.service"
 
+
 const initialFormData = {
     userName: '',
     userEmail: '',
@@ -132,7 +133,7 @@ const initialFormData = {
             required
           />
         </Form.Group>
-        <Button type='submit' disabled={isSubmiting}>Cadastrar</Button>
+        
       </Form>
     </Layout>
   )

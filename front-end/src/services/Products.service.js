@@ -1,7 +1,7 @@
 import { apiUrl, getAuthorizationHeaders } from "./Api.service"
 
 export const getProducts = async () => {
-  const response = await fetch(`${apiUrl}/produtos`)
+  const response = await fetch(`${apiUrl}/products`)
   if (!response.ok) {
     throw new Error('Response not ok.')
   }
@@ -9,7 +9,7 @@ export const getProducts = async () => {
 }
 
 export const getProductsById = async (productId) => {
-  const response = await fetch(`${apiUrl}/produtos/${productId}?_embed=inscriptions`)
+  const response = await fetch(`${apiUrl}/products/${productId}?_embed=inscriptions`)
   if (!response.ok) {
     throw new Error('Response not ok.')
   }

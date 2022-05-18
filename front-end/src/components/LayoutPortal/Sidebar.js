@@ -24,7 +24,7 @@ export function Sidebar ({ isOpen, onClose }) {
   return (
     <SidebarStyled className="bg-dark text-white d-flex flex-column p-3" isOpen={isOpen}>
       <CloseButton variant="white" onClick={onClose} className='ms-auto d-lg-none' />
-      <p className="h1">Portal Infnet</p>
+      <p className="h1">Pet Mania</p>
       <hr />
       <Nav variant="pills" className="flex-column">
         {menuItems.filter(item => item.userTypes.includes(type)).map((item, index) => (

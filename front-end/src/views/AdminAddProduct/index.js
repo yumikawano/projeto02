@@ -17,7 +17,7 @@ export function AdminAddProductView () {
   }
   return (
     <LayoutPortal>
-      <h1 className='mt-4'>Novo produto</h1>
+      <h1 className='mt-4'>Novo curso</h1>
       <UpsertProductForm onSubmit={handleSubmit} />
     </LayoutPortal>
   )

@@ -3,6 +3,7 @@ import { Alert, Button, Col, Container, Form, Row } from "react-bootstrap"
 import { Layout } from "../../components/Layout"
 import { Link } from "react-router-dom"
 
+
 const initialFormData = {
     userEmail: '',
     userPassword: ''
@@ -77,12 +78,12 @@ return (
             required
           />
         </Form.Group>
-        <Button  as={Link} to={`/produtos`} className="btn btn-danger">Entrar</Button>
+        <Button  as={Link} to={'/login'} className="btn btn-danger">Entrar</Button>
         </Form>
         </Col>
         <Col>
         <h2 className="mt-06">Criar uma conta é rápido, fácil e gratuito!</h2>
-        <Button as={Link} to={'/formulario'} className="btn btn-light btn-outline-danger">Criar minha conta</Button>
+        <Button as={Link} to={'/cadastro'} className="btn btn-light btn-outline-danger">Criar minha conta</Button>
         </Col>
       </Row>
       </Container>
