@@ -23,8 +23,8 @@ function App() {
       <Route path='/portal/produtos/cadastro' element={ <PrivateRoute userTypes={[1]}><AdminAddProductView /></PrivateRoute>} />
       <Route path='/portal/produtos/:id' element={<PrivateRoute userTypes={[1]}><AdminEditProductView /></PrivateRoute>} />
       <Route path='/formulario' element={<InscriptionForm />} />
-      <Route path='/cadastro' element={<RegisterForm />} />
-      <Route path='/login' element={<LoginForm />} />
+      <Route path='/cadastro' element={<RegisterForm redirectAfterLogin/>} />
+      <Route path='/login' element={<LoginForm redirectAfterLogin />} />
       <Route path='*' element={<NotFoundView />} />
     </Routes>
   );

@@ -8,6 +8,8 @@ import { GlobalStyle } from './assets/css/global';
 import { ToastContainer } from 'react-toastify';
 import { Provider as ReduxProvider } from "react-redux";
 import {store} from './store/store';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(

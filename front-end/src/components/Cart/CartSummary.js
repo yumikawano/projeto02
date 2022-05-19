@@ -33,7 +33,7 @@ export const CartSummary = ({ show, handleClose }) => {
               </tr>
             ) : productsCart.map(product => (
               <tr key={product.id}>
-                <td>{product.image}</td>
+                <td><img src={product.image}/></td>
                 <td>{product.name}</td>
                 <td>{product.qty}</td>
                 <td>

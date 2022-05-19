@@ -1,9 +1,10 @@
 
-export const addToCart = (id, name) => {
+export const addToCart = (id, image, name) => {
   return {
     type: 'ADD_TO_CART',
     payload: {
       id,
+      image,
       name
     }
   }

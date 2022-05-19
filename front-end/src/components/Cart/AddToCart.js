@@ -4,14 +4,14 @@ import { useDispatch, useSelector } from "react-redux"
 import { addToCart, removeOfCart } from "../../store/Cart/Cart.actions"
 import { selectCart } from "../../store/Cart/Cart.selectors"
 
-export const AddToCart = ({ id, name }) => {
+export const AddToCart = ({ id, image, name }) => {
   const dispatch = useDispatch()
   const productsCart = useSelector(selectCart)
   const productFound = productsCart.findIndex(
     product => product.id === id
   )
   const handleAdd = () => {
-    dispatch(addToCart(id, name))
+    dispatch(addToCart(id, image, name))
   }
   const handleRemove = () => {
     dispatch(removeOfCart(id))

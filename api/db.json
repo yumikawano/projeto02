@@ -903,6 +903,66 @@
       "cpf": "07172533682",
       "type": 2,
       "id": 4
+    },
+    {
+      "email": "larissa@larissa.com",
+      "password": "$2a$10$UMvF8wvHG.Uf4chwm4ZJHubMc.P6CSyQmsytNOJJsypVF4AwK4BnS",
+      "name": "larissa",
+      "number": "44988251854",
+      "address": "av. mauá",
+      "nº": "1308",
+      "cidade": "Maringá",
+      "bairro": "zona 03",
+      "complemento": "A 71",
+      "birth": "19/12/1994",
+      "cpf": "07172533682",
+      "type": 2,
+      "id": 5
+    },
+    {
+      "email": "camila@camila.com",
+      "password": "$2a$10$5FBPTiZieIya5BpgBmznDet9KUrMXaQsLd5XXldIsAtBs/g.5x9Mu",
+      "name": "CAMILA YUMI KAWANO DOMINGOS",
+      "number": "44988251854",
+      "address": "av. mauá",
+      "nº": "1308",
+      "cidade": "Maringá",
+      "bairro": "zona 03",
+      "complemento": "A 71",
+      "birth": "19/12/1994",
+      "cpf": "07172533682",
+      "type": 2,
+      "id": 6
+    },
+    {
+      "email": "camila.domingos@al.infnet.com",
+      "password": "$2a$10$2q1dRUW0axK7GjsNRWR8DO09V5ScxzNjgFxd6WpPLUSFo37SQBkuO",
+      "name": "CAMILA YUMI KAWANO DOMINGOS",
+      "number": "44988251854",
+      "address": "av. mauá",
+      "nº": "1308",
+      "cidade": "Maringá",
+      "bairro": "zona 03",
+      "complemento": "A 71",
+      "birth": "19/12/1994",
+      "cpf": "07172533682",
+      "type": 2,
+      "id": 7
+    },
+    {
+      "email": "camila.domingos@al.infnet.br",
+      "password": "$2a$10$a0nQfSN0hfGGDjhfe5RuF.zTTvVTezUOciU2ZY50z4whO.Aocjm7m",
+      "name": "CAMILA YUMI KAWANO DOMINGOS",
+      "number": "44988251854",
+      "address": "av. mauá",
+      "nº": "1308",
+      "cidade": "Maringá",
+      "bairro": "zona 03",
+      "complemento": "A 71",
+      "birth": "19/12/1994",
+      "cpf": "07172533682",
+      "type": 2,
+      "id": 8
     }
   ]
 }

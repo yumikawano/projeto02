@@ -37,7 +37,7 @@ export function RegisterForm ({ redirectAfterLogin }) {
       const userData = await createUser(formData)
       dispatch(userLogin(userData))
       if (redirectAfterLogin) {
-        navigate('/portal')
+        navigate('/login')
       }
     } catch (error) {
       const message = error.message === 'Email already exists'
