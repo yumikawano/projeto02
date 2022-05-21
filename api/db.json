@@ -963,6 +963,21 @@
       "cpf": "07172533682",
       "type": 2,
       "id": 8
+    },
+    {
+      "email": "arthur@arthur.com",
+      "password": "$2a$10$Pal.bDCHE.uweOxlhAIVgetAXwBEF2OEIY0XKeRZTj6/217HdPRka",
+      "name": "Arthur Hideaki Kawano Guedes",
+      "number": "44988251854",
+      "address": "Av. Mauá",
+      "nº": "1308",
+      "cidade": "Maringa",
+      "bairro": "Zona 03",
+      "complemento": "A 71",
+      "birth": "19/12/1994",
+      "cpf": "071.725.336-82",
+      "type": 2,
+      "id": 9
     }
   ]
 }

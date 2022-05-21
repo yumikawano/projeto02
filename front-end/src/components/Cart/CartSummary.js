@@ -33,9 +33,9 @@ export const CartSummary = ({ show, handleClose }) => {
               </tr>
             ) : productsCart.map(product => (
               <tr key={product.id}>
-                <td><img src={product.image}/></td>
+                <td><img src={product.image} width="100px" height="100px" /></td>
                 <td>{product.name}</td>
-                <td>{product.qty}</td>
+                <td> <input className="form-input" type="number" value={product.qty} /></td>
                 <td>
                 <Button
                     variant='danger'
@@ -52,7 +52,7 @@ export const CartSummary = ({ show, handleClose }) => {
             <Button as={Link} to="/produtos" href="/produtos" variant='btn-light btn-outline-dark' className="btn-add-item">ADICIONAR MAIS ITENS</Button>
             </td>
             <td>
-            <Button as={Link} to="/produtos" hreaf="#action3.2" variant='btn-dark btn-outline-dark' className="btn-pedido">FAZER PEDIDO</Button>
+            <Button as={Link} to="/login" hreaf="/login" variant='btn-dark btn-outline-dark' className="btn-pedido">FAZER PEDIDO</Button>
             </td>
           </tr>
           </tbody>

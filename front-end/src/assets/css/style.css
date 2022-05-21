@@ -71,3 +71,7 @@ header{
     margin-bottom: 10px;
 
 }
+
+.form-input {
+    width: 50px;
+}
