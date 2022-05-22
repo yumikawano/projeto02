@@ -12,6 +12,8 @@ import { InscriptionForm } from "./views/Login/InscriptionForm";
 import { RegisterForm } from "./components/AuthForm/RegisterForm";
 import { LoginForm } from "./components/AuthForm/LoginForm"
 
+
+
 function App() {
   return (
     <Routes>

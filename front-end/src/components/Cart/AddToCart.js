@@ -1,7 +1,7 @@
 
 import { Button } from "react-bootstrap"
 import { useDispatch, useSelector } from "react-redux"
-import { addToCart, removeOfCart } from "../../store/Cart/Cart.actions"
+import { addToCart, removeOfCart, addQty } from "../../store/Cart/Cart.actions"
 import { selectCart } from "../../store/Cart/Cart.selectors"
 
 export const AddToCart = ({ id, image, name }) => {
@@ -13,9 +13,11 @@ export const AddToCart = ({ id, image, name }) => {
   const handleAdd = () => {
     dispatch(addToCart(id, image, name))
   }
+
   const handleRemove = () => {
     dispatch(removeOfCart(id))
   }
+
   return (
     <>
       <Button variant="danger" block onClick={handleAdd}>
