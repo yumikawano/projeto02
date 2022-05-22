@@ -20,13 +20,10 @@ export const addQty = (id, qty) => {
   }
 }
 
-export const removeQty = (id, qty) => {
+export const removeQty = (product) => {
   return {
     type: 'REMOVE_QTY',
-    payload: {
-      id,
-      qty
-    }
+    payload: product
   }
 }
 

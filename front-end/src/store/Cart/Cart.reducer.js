@@ -22,6 +22,16 @@ switch (action.type) {
     return state.filter(
       product => product.id !== action.payload.id
     )
+    case 'REMOVE_QTY':
+      const newCart = [...state]
+        const qtyFound = newCart.findIndex (
+            product => product.qty === action.payload
+        )
+        if(qtyFound !== -1 ) {
+            newCart[qtyFound].qty--
+            return newCart 
+        }
+
   default:
     return state
 }  
