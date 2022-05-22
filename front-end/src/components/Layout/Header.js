@@ -2069,6 +2069,7 @@ export const Header = () => {
               {user && user.type === 1 && (
                 <>
                   <Button onClick={handleLogout} variant="danger"> Sair </Button>
+                  <Button as={Link} to="/portal" variant="danger"> Dashboard </Button>
                 </>
               )}
               {user && user.type === 2 && (
