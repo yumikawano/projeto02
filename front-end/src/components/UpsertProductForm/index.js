@@ -33,12 +33,32 @@ export function UpsertProductForm ({ initialValue = emptyFormData, buttonLabel =
           required
         />
       </Form.Group>
-      <Form.Group className="mb-3" controlId="product-coordinator">
-        <Form.Label className="mb-0">Coordenador</Form.Label>
+      <Form.Group className="mb-3" controlId="product-class">
+        <Form.Label className="mb-0">Classe do produto</Form.Label>
         <Form.Control
-          placeholder="Nome do coordenador do produto"
-          name="coordinator"
-          value={formData.coordinator}
+          placeholder="Classe do produto"
+          name="class"
+          value={formData.class}
+          onChange={handleChange}
+          required
+        />
+      </Form.Group>
+      <Form.Group className="mb-3" controlId="product-category">
+        <Form.Label className="mb-0">Categoria</Form.Label>
+        <Form.Control
+          placeholder="Categoria do produto"
+          name="category"
+          value={formData.category}
+          onChange={handleChange}
+          required
+        />
+      </Form.Group>
+      <Form.Group className="mb-3" controlId="product-sub-category">
+        <Form.Label className="mb-0">Sub-categoria</Form.Label>
+        <Form.Control
+          placeholder="Sub-categoria do produto"
+          name="subcategory"
+          value={formData.subcategory}
           onChange={handleChange}
           required
         />
@@ -65,6 +85,16 @@ export function UpsertProductForm ({ initialValue = emptyFormData, buttonLabel =
           as='textarea'
         />
       </Form.Group>
+      <Form.Group className="mb-3" controlId="product-tamanho">
+        <Form.Label className="mb-0">Tamanho</Form.Label>
+        <Form.Control
+          placeholder="Tamanho do produto"
+          name="tamanho1"
+          value={formData.tamanho}
+          onChange={handleChange}
+          required
+        />
+      </Form.Group>
       <Form.Group className="mb-3" controlId="product-image">
         <Form.Label className="mb-0">Imagem</Form.Label>
         <Form.Control
@@ -76,7 +106,7 @@ export function UpsertProductForm ({ initialValue = emptyFormData, buttonLabel =
         />
         <Form.Text>Cole aqui o link da imagem hospedada no <a href="https://cloudinary.com/" target='_blank' rel="noreferrer">Cloudinary</a>.</Form.Text>
       </Form.Group>
-      <Button type='submit'>{buttonLabel}</Button>
+      <Button  variant="danger" type='submit'>{buttonLabel}</Button>
     </Form>
   )
 }

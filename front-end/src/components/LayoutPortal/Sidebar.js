@@ -13,7 +13,7 @@ const menuItems = [
   },
   {
     to: '/portal/produtos',
-    text: 'produtos',
+    text: 'Produtos',
     checkAllPath: false,
     userTypes: [1]
   }
@@ -22,7 +22,7 @@ const menuItems = [
 export function Sidebar ({ isOpen, onClose }) {
   const { type } = useSelector(selectUser)
   return (
-    <SidebarStyled className="bg-dark text-white d-flex flex-column p-3" isOpen={isOpen}>
+    <SidebarStyled className="bg-danger text-white d-flex flex-column p-3" isOpen={isOpen}>
       <CloseButton variant="white" onClick={onClose} className='ms-auto d-lg-none' />
       <p className="h1">Pet Mania</p>
       <hr />

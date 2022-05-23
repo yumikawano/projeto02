@@ -44,7 +44,7 @@ export const ProductDetailView = ({ name, image, productsCard, setProductsCard }
            <div className="container">
   <div className="row">
     <div className="col">
-      <img src={product.image} className="card-img-left" alt="..."></img>
+      <img src={product.image} className="card-img-left" alt="..." width="400px" height="400px"></img>
     </div>
     <div className="col">
   <div className="card-body">
@@ -56,7 +56,6 @@ export const ProductDetailView = ({ name, image, productsCard, setProductsCard }
           <option value="2">2,5kg</option>
           <option value="3">13kg</option>
         </Form.Select>
-        <p className="h4">{product.price}</p>
         <AddToCart 
           productsCard={productsCard}
           setProductsCard={setProductsCard}
